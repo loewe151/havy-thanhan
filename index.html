@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Hà Vy &amp; Thanh An — 10.10.2026</title>
+  <meta name="description" content="Wedding celebration of Hà Vy & Thanh An — 10 October 2026.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#F6F1E8">
+
+  <!-- Ảnh xem trước khi chia sẻ link (Zalo, Messenger, Facebook).
+       Sau khi đăng web, thay "og-image.jpg" bằng đường dẫn đầy đủ, ví dụ:
+       https://havy-thanhan.netlify.app/assets/og-image.jpg -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Hà Vy & Thanh An — 10.10.2026">
+  <meta property="og:description" content="Wedding celebration of Hà Vy & Thanh An — 10 October 2026.">
+  <meta property="og:image" content="assets/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap&subset=vietnamese" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/images/hero-main.jpg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#rsvp">Bỏ qua đến RSVP</a>
+
+  <header class="nav" id="nav">
+    <a class="nav__mark" href="#top" aria-label="Về đầu trang">HV <i>&amp;</i> TA</a>
+    <nav class="nav__links" id="navLinks" aria-label="Điều hướng chính"></nav>
+    <div class="nav__tools">
+      <div class="lang" role="group" aria-label="Ngôn ngữ / Language">
+        <button type="button" data-lang="vi">VI</button>
+        <button type="button" data-lang="en">EN</button>
+      </div>
+      <button class="nav__burger" id="burger" type="button" aria-expanded="false" aria-controls="menu">
+        <span></span><span></span><span class="sr" id="burgerLabel">Menu</span>
+      </button>
+    </div>
+  </header>
+
+  <div class="menu" id="menu" hidden>
+    <nav class="menu__links" id="menuLinks"></nav>
+  </div>
+
+  <main id="app"></main>
+
+  <div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Ảnh">
+    <button class="lightbox__close" type="button" data-lb="close" aria-label="Đóng">×</button>
+    <button class="lightbox__nav lightbox__nav--prev" type="button" data-lb="prev" aria-label="Ảnh trước">←</button>
+    <figure class="lightbox__figure">
+      <img id="lbImg" alt="">
+      <figcaption id="lbCap"></figcaption>
+    </figure>
+    <button class="lightbox__nav lightbox__nav--next" type="button" data-lb="next" aria-label="Ảnh sau">→</button>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <noscript>
+    <p style="padding:2rem;text-align:center">Vui lòng bật JavaScript để xem website. · Please enable JavaScript to view this page.</p>
+  </noscript>
+
+  <script src="content.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
