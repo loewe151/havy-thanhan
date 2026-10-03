@@ -8,7 +8,7 @@ website/
 ├── content.js              ← MỌI NỘI DUNG, chỉ cần sửa file này
 ├── styles.css, app.js      ← giao diện và logic (không cần sửa)
 ├── google-apps-script.gs   ← dán vào Google Apps Script (Bước 2)
-└── assets/images/          ← ảnh
+└── *.jpg                   ← ảnh (t-*.jpg là ảnh nhỏ cho thư viện)
 ```
 
 ## Bước 1. Xem thử trên máy
@@ -53,14 +53,13 @@ Tìm các dòng có chữ `TODO`:
 
 Lưu file rồi tải lại trang (F5) để thấy thay đổi. Mọi chữ có hai bản `{ vi: "...", en: "..." }`.
 
-**Thay ảnh:** đặt ảnh mới vào `assets/images/` với tên cũ, hoặc đổi đường dẫn trong `content.js`. Nên dùng ảnh JPG hoặc WebP dưới 500KB. Ảnh nhỏ cho thư viện nằm ở `assets/thumbs/` (cùng tên file).
 
 ## Bước 4. Đăng lên mạng để gửi link cho khách
 
 Cách dễ nhất: **Netlify Drop**.
 1. Vào [app.netlify.com/drop](https://app.netlify.com/drop).
 2. Kéo thả cả thư mục `website` vào. Bạn nhận ngay một link công khai. Có thể đổi tên link trong phần cài đặt site.
-3. **Quan trọng:** mở `index.html`, tìm hai dòng `og:image` và thay `assets/og-image.jpg` bằng link đầy đủ, ví dụ `https://ten-cua-ban.netlify.app/assets/og-image.jpg`. Nếu không, khi dán link vào Zalo/Messenger sẽ không hiện ảnh xem trước. Đăng lại thư mục sau khi sửa.
+3. **Quan trọng:** mở `index.html`, tìm hai dòng `og:image` và thay `og-image.jpg` bằng link đầy đủ, ví dụ `https://ten-cua-ban.netlify.app/og-image.jpg`. Nếu không, khi dán link vào Zalo/Messenger sẽ không hiện ảnh xem trước. Đăng lại thư mục sau khi sửa.
 4. Mỗi lần sửa nội dung, kéo thả lại thư mục (hoặc dùng *Deploys → kéo thả* trong site của bạn).
 
 ## Link cá nhân hoá cho từng khách

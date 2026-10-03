@@ -34,7 +34,7 @@ window.WEDDING = {
 
   /* ---------- Hero ---------- */
   hero: {
-    image: "assets/images/hero-main.jpg",
+    image: "hero-main.jpg",
     tagline: { en: "Ceremony · Dinner · Celebration", vi: "Lễ cưới · Tiệc tối · Tiệc mừng" },
     dateText: "10.10.2026",
   },
@@ -63,10 +63,10 @@ window.WEDDING = {
         en: "After the trips, the late dinners, the plans that changed at the last minute and a great many ordinary days, we decided to begin a new chapter." },
     ],
     timeline: [
-      { year: "2021", title: "The First Hello", sub: { vi: "Lần đầu gặp nhau", en: "Where it began" }, image: "assets/images/story-2021.jpg" },
-      { year: "2022", title: "More Time Together", sub: { vi: "Thêm nhiều thời gian bên nhau", en: "Weekends, then every day" }, image: "assets/images/story-2022.jpg" },
-      { year: "2024", title: "Our Kind of Everyday", sub: { vi: "Những ngày rất đỗi bình thường", en: "The quiet, ordinary days" }, image: "assets/images/story-2024.jpg" },
-      { year: "2026", title: "The Next Chapter", sub: { vi: "Chương tiếp theo", en: "And now, this" }, image: "assets/images/story-2026.jpg" },
+      { year: "2021", title: "The First Hello", sub: { vi: "Lần đầu gặp nhau", en: "Where it began" }, image: "story-2021.jpg" },
+      { year: "2022", title: "More Time Together", sub: { vi: "Thêm nhiều thời gian bên nhau", en: "Weekends, then every day" }, image: "story-2022.jpg" },
+      { year: "2024", title: "Our Kind of Everyday", sub: { vi: "Những ngày rất đỗi bình thường", en: "The quiet, ordinary days" }, image: "story-2024.jpg" },
+      { year: "2026", title: "The Next Chapter", sub: { vi: "Chương tiếp theo", en: "And now, this" }, image: "story-2026.jpg" },
     ],
   },
 
@@ -140,7 +140,7 @@ window.WEDDING = {
       address: "", // TODO: số nhà / số căn villa
       mapsQuery: "Khu Villa Park, Bưng Ông Thoàn, Phú Hữu, Thủ Đức, Hồ Chí Minh",
       notes: [],   // TODO: ví dụ { vi: "Ô tô đỗ tại bãi xe đầu khu", en: "Cars park at the entrance lot" }
-      image: "assets/images/venue-garden.jpg",
+      image: "venue-garden.jpg",
     },
     hyatt: {
       name: "Park Hyatt Saigon",
@@ -151,16 +151,16 @@ window.WEDDING = {
         { vi: "Đón khách từ 16:30", en: "Guests welcomed from 16:30" },
         { vi: "Khách nên có mặt trước 17:10", en: "Please arrive before 17:10" },
       ],
-      image: "assets/images/reception-table.jpg",
+      image: "reception-table.jpg",
     },
   },
 
   /* ---------- Điểm nhấn của tiệc ---------- */
   highlights: [
-    { title: "Signature Drinks", body: { vi: "Hai cocktail riêng cho buổi tiệc.", en: "Two cocktails created just for the evening." }, image: "assets/images/signature-drinks.jpg" },
-    { title: "Polaroid Corner", body: { vi: "Chụp một tấm, giữ một tấm và để lại một tấm.", en: "Take one, keep one, leave one behind for us." }, image: "assets/images/polaroid-corner.jpg" },
-    { title: "Table Notes", body: { vi: "Những chi tiết nhỏ được chuẩn bị riêng tại bàn tiệc.", en: "Small details prepared for you at every table." }, image: "assets/images/reception-table.jpg" },
-    { title: "After Dark", body: { vi: "Không gian thay đổi khi đêm xuống.", en: "The room changes as night falls." }, image: "assets/images/after-party.jpg" },
+    { title: "Signature Drinks", body: { vi: "Hai cocktail riêng cho buổi tiệc.", en: "Two cocktails created just for the evening." }, image: "signature-drinks.jpg" },
+    { title: "Polaroid Corner", body: { vi: "Chụp một tấm, giữ một tấm và để lại một tấm.", en: "Take one, keep one, leave one behind for us." }, image: "polaroid-corner.jpg" },
+    { title: "Table Notes", body: { vi: "Những chi tiết nhỏ được chuẩn bị riêng tại bàn tiệc.", en: "Small details prepared for you at every table." }, image: "reception-table.jpg" },
+    { title: "After Dark", body: { vi: "Không gian thay đổi khi đêm xuống.", en: "The room changes as night falls." }, image: "after-party.jpg" },
     { title: "Late-night Bites", body: { vi: "Đồ ăn nhẹ sau tiệc.", en: "Something to eat after the dancing." } },
   ],
 
@@ -187,7 +187,7 @@ window.WEDDING = {
     bank: "",
     accountName: "",
     accountNumber: "",
-    qrImage: "", // ví dụ "assets/images/qr.png"
+    qrImage: "", // ví dụ "qr.png"
   },
 
   /* ---------- Q&A ----------
@@ -222,7 +222,7 @@ window.WEDDING = {
 
   /* ---------- Kết thúc ---------- */
   closing: {
-    image: "assets/images/first-dance.jpg",
+    image: "first-dance.jpg",
     line: { vi: "Hẹn gặp bạn.", en: "See you there." },
   },
 };

@@ -373,11 +373,11 @@
             galleryFlat.push(it);
             var i = idx++;
             return '<button class="gal__item" type="button" data-photo="' + i + '" aria-label="' + esc(L(it.alt)) + '">' +
-              '<img loading="lazy" src="assets/thumbs/' + esc(it.src) + '" alt="' + esc(L(it.alt)) + '"></button>';
+              '<img loading="lazy" src="t-' + esc(it.src) + '" alt="' + esc(L(it.alt)) + '"></button>';
           }).join('') + '</div></div>';
       }).join('') +
     '</div></section>' +
-    '<div class="interlude" aria-hidden="true"><img loading="lazy" src="assets/images/venue-garden.jpg" alt=""></div>';
+    '<div class="interlude" aria-hidden="true"><img loading="lazy" src="venue-garden.jpg" alt=""></div>';
   }
 
   function dayTpl() {
@@ -955,7 +955,7 @@
     lb.i = (i + galleryFlat.length) % galleryFlat.length;
     var it = galleryFlat[lb.i];
     var img = $('#lbImg');
-    img.src = 'assets/images/' + it.src;
+    img.src = it.src;
     img.alt = L(it.alt);
     $('#lbCap').textContent = L(it.alt) + '  ·  ' + (lb.i + 1) + ' / ' + galleryFlat.length;
   }
